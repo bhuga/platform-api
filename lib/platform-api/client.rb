@@ -2583,7 +2583,7 @@ module PlatformAPI
     end
   end
 
-  SCHEMA = Heroics::Schema.new(MultiJson.load(<<-'HEROICS_SCHEMA'))
+  SCHEMA = Heroics::Schema.new(MultiJson.decode(<<-'HEROICS_SCHEMA'))
 {
   "$schema": "http://interagent.github.io/interagent-hyper-schema",
   "type": [
